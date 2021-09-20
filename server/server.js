@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
 });
 //port definition
 const port = process.env.PORT || 5000;
-
 app.listen(port, () => {
   console.log(
     ` Covid Figures Web API listening on port ${port} in ${process.env.NODE_ENV} mode`

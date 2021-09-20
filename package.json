@@ -4,8 +4,8 @@
   "description": "Demonstration of COVID-19 cases based on countries .",
   "main": "server.js",
   "engines": {
-    "node":"14.17.0",
-    "npm":"7.18.1"
+    "node": "14.17.0",
+    "npm": "7.18.1"
   },
   "dependencies": {
     "@babel/cli": "^7.15.4",
@@ -30,12 +30,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production  babel-node server/server.js",
-     "dev": "NODE_ENV=development nodemon --exec babel-node --presets @babel/preset-env server/server.js",
-     "migration": " babel-node node_modules/.bin/sequelize db:migrate",
-     "migration-production": "NODE_ENV=production babel-node node_modules/.bin/sequelize db:migrate",
-     "seeds": "babel-node node_modules/.bin/sequelize db:seed:all --seeders-path server/database/seeders",
-     "seeds-production": "NODE_ENV=production babel-node node_modules/.bin/sequelize db:seed:all --seeders-path server/database/seeders"
-
+    "dev": "NODE_ENV=development nodemon --exec babel-node --presets @babel/preset-env server/server.js",
+    "migration": " babel-node node_modules/.bin/sequelize db:migrate",
+    "migration-production": "NODE_ENV=production babel-node node_modules/.bin/sequelize db:migrate",
+    "seeds": "babel-node node_modules/.bin/sequelize db:seed:all --seeders-path server/database/seeders",
+    "seeds-production": "NODE_ENV=production babel-node node_modules/.bin/sequelize db:seed:all --seeders-path server/database/seeders"
   },
   "repository": {
     "type": "git",
