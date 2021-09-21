@@ -23,6 +23,15 @@ Back-end repository of the Covid Tracker API
 }
 ```
 
+### GET api/v1/logs
+
+```
+{
+    "message": "Logs retrieved successfully",
+    "logs": "{\"message\":\"GET /api/v1/logs 200 51 - 4.626 ms\\n\",\"level\":\"info\"}\n{\"message\":\"GET /api/v1/logs 200 127 - 1.379 ms\\n\",\"level\":\"info\"}\n{\"message\":\"GET /api/v1/logs 200 204 - 1.362 ms\\n\",\"level\":\"info\"}\n"
+}
+```
+
 ## Clone the repository
 
 [Github](https://github.com/nshutijonathan/covid-19-tracker-be)
