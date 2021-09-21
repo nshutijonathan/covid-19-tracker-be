@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 
 import router from "./routes/routes";
 import constants from "./helpers/constants";
+import morgan from "morgan";
+import logger from "./database/config/winston";
 const { OK } = constants.statusCode;
 //express server
 dotenv.config();
@@ -11,8 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(morgan("tiny", { stream: logger.stream }));
 // app.use(router);
+
 app.use(router);
 //home route
 

@@ -1,0 +1,4 @@
+{"message":"GET /api/v1/logs 200 51 - 4.626 ms\n","level":"info"}
+{"message":"GET /api/v1/logs 200 127 - 1.379 ms\n","level":"info"}
+{"message":"GET /api/v1/logs 200 204 - 1.362 ms\n","level":"info"}
+{"message":"GET /api/v1/logs 200 281 - 1.496 ms\n","level":"info"}
