@@ -6,7 +6,7 @@ const { cases } = models;
 class Cases {
   static async getCases(req, res) {
     try {
-      const casesList = await cases.findAll();
+      const casesList = await cases.findAll({ limit: 20 });
       return res.status(OK).json({
         message: "Cases fetched successfully",
         status: 200,
